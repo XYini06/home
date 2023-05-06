@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/1xz6ezbs.png" sizes="16x16">
+<style>
+html{height:100%; display: flex; justify-content: center;align-items: center;}
+body {font-size:18px;width: 100%;height:-webkit-fill-available;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;letter-spacing: 1px;margin: 15px 40px 15px 40px;padding: 15px 0;display: flex;}
+p {
+	margin: 11px 0 0 0;
+}
+
+.home {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block-end:130px;
+}
+.home .avatar-wrapper
+{
+	position: relative;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+.home .avatar
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+img
+{
+    vertical-align: middle;
+    border-style: none;
+}
+a{color:#333;text-decoration:none; }
+a:hover {color:#CC3300;text-decoration:none;}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: -webkit-fill-available;
+	text-align: center;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+<section class="home">
+	<div style="display: flex; flex-direction: column;">
+				<p>
+			Code:
+			<a href="https://codeforces.com/profile/Hitclyr_Wncr" target="_blank"><strong>Codeforces</strong></a>&nbsp;| 
+			<a href="https://atcoder.jp/users/Hitclyr_Wncr" target="_blank"><strong>ATcoder</strong></a>&nbsp;| 
+			<a href="https://ac.nowcoder.com/" target="_blank"><strong>Nowcoder</strong></a>&nbsp;| 
+			<a href="https://leetcode.cn/u/hitclyrwncr/" target="_blank"><strong>Leetcoder</strong></a>&nbsp;| 
+			<a href="https://www.luogu.com.cn/user/699650" target="_blank"><strong>Luogu</strong></a>&nbsp;| 
+			<a href="https://vjudge.net/user/HitclyrWncr" target="_blank"><strong>Vjudge</strong></a>
+		</p>
+	</div>
+</section> 
+
+
+<footer class="footer">
+<em style="color:#666666; font-size:12px;"></em>
+</footer>
+</body>
+</html>
+
