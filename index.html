@@ -5,7 +5,7 @@
 <link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/1xz6ezbs.png" sizes="16x16">
 <style>
 html{height:100%; display: flex; justify-content: center;align-items: center;}
-body {font-size:18px;width: 100%;height:-webkit-fill-available;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;letter-spacing: 1px;margin: 15px 40px 15px 40px;padding: 15px 0;display: flex;}
+body {font-size:18px;width: 100%;height:-webkit-fill-available;font-family: "ZCOOL XiaoWei",-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;letter-spacing: 1px;margin: 15px 40px 15px 40px;padding: 15px 0;display: flex;}
 p {
 	margin: 11px 0 0 0;
 }
@@ -50,10 +50,63 @@ footer {
 	text-align: center;
 	padding: 20px;
 }
+input[type="button" i] {
+	background-color:white;
+	border: none;
+}
+sider {
+    background-color: #f9f9f9;
+    margin: 15px 40px 15px 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+ 
+    <script>
+        function hideFn() {
+            // 隐藏div
+            /*$("#showDiv").hide("slow","swing",function () {
+                alert("隐藏了...")
+            });*/
+
+            // 滑动隐藏div
+            $("#showDiv").slideUp("fetch");
+
+            // 淡出隐藏div
+            // $("#showDiv").fadeOut("fetch");
+
+        }
+        function showFn() {
+            // 显示div
+            // $("#showDiv").show("slow","swing");
+            // linear 匀速
+
+            // 滑动显示div
+            $("#showDiv").slideDown("slow");
+
+            // 淡出显示div
+            //$("#showDiv").fadeIn("slow")
+        }
+ 
+        function toggleFn() {
+            // 能显示能隐藏
+            // $("#showDiv").toggle("slow","linear");
+
+            // 滑动能显示能隐藏
+             $("#showDiv").slideToggle("slow");
+
+            // 淡入淡出显示和隐藏div
+            //$("#showDiv").fadeToggle("fetch")
+        }
+ 
+    </script>
 </head>
 <body>
-<section class="home">
+<main class="home">
 	<div style="display: flex; flex-direction: column;">
 		<div class="avatar-wrapper">
         			<img src="https://picx.zhimg.com/v2-06caf2cce176289d22a9a64a3ebd5add_xl.jpg?source=32738c0c" alt="Ciaxin" class="avatar" /> 
@@ -65,14 +118,17 @@ footer {
 			<a href="https://github.com/Ciaxin" target="_blank"><strong>Github</strong></a>&nbsp;| 
 			<a href="https://ciaxin.github.io/" target="_blank"><strong>Articles</strong></a>&nbsp;| 
 			<a href="https://www.cnblogs.com/Cnghit/" target="_blank"><strong>Cnblogs</strong></a>&nbsp;| 
-			<a href="https://ciaxin.github.io/Ciaxinhome/Code" target="_blank"><strong>Code</strong></a>
+			<a href="https://ciaxin.github.io/Ciaxinhome/Code" target="_blank"><strong>OJ</strong></a>&nbsp;| 
+			<input type="button" style="font-size:30px;" value="..." onclick="toggleFn()">
 		</p>
 	</div>
-</section> 
+</main>
+<sider id="showDiv">
 
-
+</sider>
+ 
 <footer class="footer">
-<em style="color:#666666; font-size:12px;"></em>
+<em style="color:#666666; font-size:12px;">QAQ</em>
 </footer>
 </body>
 </html>
