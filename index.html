@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,48 +63,16 @@ sider {
     justify-content: center;
     align-items: center;
 }
-</style>
 
+</style>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  
     <script>
-        function hideFn() {
-            // 隐藏div
-            /*$("#showDiv").hide("slow","swing",function () {
-                alert("隐藏了...")
-            });*/
-
-            // 滑动隐藏div
-            $("#showDiv").slideUp("fetch");
-
-            // 淡出隐藏div
-            // $("#showDiv").fadeOut("fetch");
-
-        }
-        function showFn() {
-            // 显示div
-            // $("#showDiv").show("slow","swing");
-            // linear 匀速
-
-            // 滑动显示div
-            $("#showDiv").slideDown("slow");
-
-            // 淡出显示div
-            //$("#showDiv").fadeIn("slow")
-        }
- 
         function toggleFn() {
-            // 能显示能隐藏
-            // $("#showDiv").toggle("slow","linear");
-
-            // 滑动能显示能隐藏
              $("#showDiv").slideToggle("slow");
-
-            // 淡入淡出显示和隐藏div
-            //$("#showDiv").fadeToggle("fetch")
         }
- 
     </script>
+
 </head>
 <body>
 <main class="home">
@@ -123,7 +92,7 @@ sider {
 		</p>
 	</div>
 </main>
-<sider id="showDiv">
+<sider id="showDiv" style="display:none">
 
 </sider>
  
